@@ -1,0 +1,16 @@
+<div class='pull-right m-t-2'>
+    <button class='btn btn-primary' 
+        ng-click='$ctrl.refreshAll()'
+        ng-disabled='!$ctrl.anySelected()'>
+        <span class="zmdi zmdi-refresh"></span>&nbsp; Refresh selected
+    </button>
+    <button class='btn btn-primary' 
+        ng-click='$ctrl.archiveAll()'
+        ng-disabled='!$ctrl.anySelected()'>
+        <span class="zmdi zmdi-delete"></span>&nbsp; Archive selected
+    </button>
+    <button class='btn btn-primary' 
+        ng-disabled='!$ctrl.anySelected()'>
+        <span class="zmdi zmdi-time"></span>&nbsp; Change selected schedules
+    </button>
+</div>

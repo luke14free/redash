@@ -690,3 +690,14 @@ div.table-name:hover {
 .m-t-2{
   margin-top:2px;
 }
+
+/* Utils: make stuff spin */
+
+.spin{
+  -webkit-animation: spin 4s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  0%  {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}   
+}

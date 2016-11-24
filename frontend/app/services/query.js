@@ -271,8 +271,8 @@ function QueryResource($resource, $http, $q, $location, currentUser, QueryResult
     return url;
   };
 
-  Query.prototype.getQueryResultPromise = function getQueryResultPromise() {
-    return this.getQueryResult().toPromise();
+  Query.prototype.getQueryResultPromise = function getQueryResultPromise(maxAge) {
+    return this.getQueryResult(maxAge).toPromise();
   };
 
   Query.prototype.getParameters = function getParameters() {
